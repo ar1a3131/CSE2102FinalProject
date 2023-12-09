@@ -1,0 +1,115 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: #161616;
+}
+
+/* Style for each question and options */
+.quiz-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff; /* White background */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center; /* Center the content */
+}
+
+.question-text {
+    font-size: 1.6rem; /* Increased font size */
+    font-weight: bold; /* Added font weight for better readability */
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around; /* Align options next to each other */
+    gap: 10px;
+}
+
+.option {
+    flex: 1; /* Take equal space within the container */
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #131212; /* Black background color */
+    color: #fff; /* White text color */
+}
+
+.option:hover {
+    background-color: #404040; /* Darker black on hover */
+}
+
+/* Add this style to your CSS to define the button's selected style */
+.option.selected {
+    background-color: grey;
+    border: none;
+}
+
+.timer {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: 161616;
+    font-weight: bold;
+}
+
+/* Button styles */
+
+/* Next and Reset buttons */
+.navigation-buttons button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #131212;
+
+    border: 2px solid #000000;
+}
+
+.navigation-buttons button:hover {
+    background-color: grey;
+}
+
+/* Add this style to your CSS to define the button's selected style */
+.navigation-buttons button.selected {
+    background-image: linear-gradient(to bottom, #c0c1d8, #cbc9df);
+    border: none;
+}
+
+.navigation-buttons button:first-child {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.result-details .option {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.result-details .option p {
+    font-size: 1.0rem;
+}

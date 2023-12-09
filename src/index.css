@@ -1,0 +1,16 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrollbars due to background image */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #root {
+    height: 100vh; /* Set root container to full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+  }
+
+  .result-details-scrollable {
+    max-height: 400px; /* Set the maximum height based on your design */
+    overflow-y: auto; /* Enable vertical scroll */
+}
