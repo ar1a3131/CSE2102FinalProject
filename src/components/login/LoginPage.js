@@ -26,7 +26,8 @@ const LoginPage = ({ onLoginSuccess }) => {
     return (
         <div className="login-container" style={{ backgroundImage: `url('/earth.jpeg')` }}>
             <div className="login-form">
-            <center><h1>Arianna Azizi's Quiz System</h1></center>
+            <center><h1>Quiz System</h1>
+            <p>Project for CSE2102</p></center>
                 <form onSubmit={handleSubmit}>
                     <div className="input-group">
                         <label htmlFor="email">Email</label>
