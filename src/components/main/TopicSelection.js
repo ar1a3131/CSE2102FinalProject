@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './TopicSelection.css'; // Ensure this file exists and is in the correct path
+import './TopicSelection.css'; 
 
 const TopicSelection = ({ onSelectTopic }) => {
     const navigate = useNavigate();
