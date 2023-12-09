@@ -22,28 +22,27 @@
 .topic-button {
     padding: 1rem 2rem;
     font-size: 1.25rem;
-    font-weight: bold; /* Make the text bold */
-    color: #0056b3; /* Dark blue color for text */
-    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Gradient background for a glossy look */
-    border: 2px solid #0056b3; /* Border to give a button-like appearance */
-    border-radius: 30px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    font-weight: bold;
+    color: #fff; /* White text color */
+    background: #000; /* Black background color */
+    border: 2px solid #000; /* Border color same as background for a solid appearance */
+    border-radius: 15px; /* Reduced rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    text-transform: uppercase; /* Uppercase text for a more formal look */
-    margin: 0.5rem; /* Ensure some space around the buttons */
+    text-transform: uppercase;
+    margin: 0.5rem;
 }
 
 .topic-button:hover {
-    background: linear-gradient(to right, #f8f8f8, #e0e0e0); /* Lighter gradient for hover effect */
-    color: #004080; /* Slightly darker blue on hover */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Larger shadow for a lifted effect */
-    transform: translateY(-5px); /* Move the button up slightly on hover */
+    background: #333; /* Darker black on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
-  
+
 .topic-button:active {
-    background: #e0e0e0; /* Solid color for active state */
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
-    transform: translateY(-2px); /* Slight movement to show the button is being pressed */
+    background: #555; /* Even darker black for active state */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 .start-message-box {

@@ -12,7 +12,7 @@ const TopicSelection = ({ onSelectTopic }) => {
         navigate('/quiz');
     };
 
-    // Inline style for the background image
+
     const containerStyle = {
         backgroundImage: `url(${process.env.PUBLIC_URL}/map.jpg)`,
         backgroundSize: 'cover',
@@ -23,7 +23,14 @@ const TopicSelection = ({ onSelectTopic }) => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        // Include other styles you want to apply directly here
+        padding: '2rem', // Add padding to create a black transparent box
+        borderRadius: '15px', // Add border-radius for rounded corners
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Add a subtle box shadow
+        backgroundColor: 'rgba(0, 0, 0, 0.7)', // Black background with transparency
+        color: '#fff', // White text color
+        textAlign: 'center', // Center align text
+        textShadow: '2px 2px 5px rgba(0, 0, 0, 1)'
+
     };
 
     return (
@@ -37,7 +44,7 @@ const TopicSelection = ({ onSelectTopic }) => {
                 ))}
             </div>
             
-
+            <h1>There are 5 questions per topic</h1>
         </div>
     );
 };
